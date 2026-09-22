@@ -4,10 +4,10 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/twrp_athena.mk
+    $(LOCAL_DIR)/fox_athena.mk
 
 COMMON_LUNCH_CHOICES := \
-    twrp_athena-user \
-    twrp_athena-userdebug \
-    twrp_athena-eng
+    fox_athena-user \
+    fox_athena-userdebug \
+    fox_athena-eng
 
