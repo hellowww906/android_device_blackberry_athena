@@ -1,0 +1,11 @@
+# Android fstab file for TWRP
+#<src>  <mnt_point>  <type>  <mnt_flags>  <fs_mgr_flags>
+/dev/block/by-name/system  /system  ext4  defaults  defaults
+/dev/block/bootdevice/by-name/userdata  /data  ext4  nosuid,nodev,noatime  wait,formattable,fileencryption=ice
+/dev/block/bootdevice/by-name/cache  /cache  ext4  defaults  defaults
+/dev/block/bootdevice/by-name/boot  /boot  emmc  defaults  defaults
+/dev/block/bootdevice/by-name/recovery  /recovery  emmc  defaults  defaults
+
+# External storage & USB OTG
+/dev/block/mmcblk1p1    /external_sd    vfat    nosuid,nodev    wait,fallback=utf8
+/dev/block/sda1         /usb-otg        vfat    nosuid,nodev    wait,fallback=utf8
