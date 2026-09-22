@@ -8,13 +8,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common twrp stuff.
-$(call inherit-product, vendor/fox/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from recovery device
 $(call inherit-product, device/blackberry/athena/device.mk)
 
 PRODUCT_DEVICE := athena
-PRODUCT_NAME := fox_athena
+PRODUCT_NAME := twrp_athena
 PRODUCT_BRAND := Blackberry
 PRODUCT_MODEL := athena
 PRODUCT_MANUFACTURER := Blackberry
